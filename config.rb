@@ -40,4 +40,6 @@ configure :build do
   activate :gzip
   activate :minify_css
   activate :relative_assets
+  activate :livereload, :host => "127.0.0.1",
+         :livereload_css_target => nil
 end
