@@ -1,8 +1,21 @@
 // Specific CSS for your home-page
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap');
 
-h1 {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: rgb(247, 247, 244);
+    height: 100vh;
+    line-height: 1.6;
+    }
+  
+  h1 {
     font-size: 100px;
     color: #2c313f;
     font-family: "Poppins", "Helvetica", "sans-serif";
-}
+    text-decoration: #6FD08C wavy underline;
+  }
+  

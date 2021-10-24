@@ -1,0 +1,69 @@
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+
+$nav-bg-color: hsl(0, 0%, 15%);
+$nav-text-color: hsl(0, 0%, 85%);
+$nav-text-color-focus: white;
+$nav-bg-contrast: hsl(0, 0%, 25%);
+
+#nav {
+  position: fixed;
+  height: 64px;
+  background-color: $nav-bg-color;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0.4em;
+  width: 100%;
+}
+
+.home-link, .nav-link {
+  color: $nav-text-color;
+  text-decoration: none;
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  &:focus, &:hover {
+    color: $nav-text-color-focus;
+    text-decoration: none;
+  }
+}
+
+.nav-link {
+  justify-content: center;
+  width: 100%;
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
+  &:focus, &:hover {
+    color: $nav-text-color-focus;
+    background-color: $nav-bg-contrast;
+  }
+}
+
+.nav-logo {
+  background-color: $nav-text-color-focus;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 0.5em;
+}
