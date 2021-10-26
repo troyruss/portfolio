@@ -67,3 +67,43 @@ $nav-bg-contrast: hsl(0, 0%, 25%);
   height: 30px;
   margin: 0 0.5em;
 }
+
+#nav-toggle {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+// #nav-toggle:focus .icon-bar:focus, .icon-halfbar:focus {
+//   background-color: $nav-text-color-focus;
+// }
+
+#nav-toggle:focus, #nav-toggle:hover .icon-bar {
+  background-color: $nav-text-color-focus;
+}
+
+#nav-toggle:focus, #nav-toggle:hover .icon-halfbar {
+  background-color: $nav-text-color-focus;
+}
+
+.icon-bar {
+  display: block;
+  width: 32px;
+  height: 4px;
+  margin: 2px;
+  background-color: $nav-text-color;
+}
+
+.icon-halfbar {
+  display: block;
+  width: 16px;
+  height: 4px;
+  margin: 2px;
+  background-color: $nav-text-color;
+}
