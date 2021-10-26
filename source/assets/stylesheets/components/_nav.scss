@@ -15,6 +15,7 @@ $nav-bg-color: hsl(0, 0%, 15%);
 $nav-text-color: hsl(0, 0%, 85%);
 $nav-text-color-focus: white;
 $nav-bg-contrast: hsl(0, 0%, 25%);
+$duration: 200ms;
 
 #nav {
   position: fixed;
@@ -78,18 +79,12 @@ $nav-bg-contrast: hsl(0, 0%, 25%);
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-}
-
-// #nav-toggle:focus .icon-bar:focus, .icon-halfbar:focus {
-//   background-color: $nav-text-color-focus;
-// }
-
-#nav-toggle:focus, #nav-toggle:hover .icon-bar {
-  background-color: $nav-text-color-focus;
-}
-
-#nav-toggle:focus, #nav-toggle:hover .icon-halfbar {
-  background-color: $nav-text-color-focus;
+  &:focus, &:hover .icon-halfbar {
+    background-color: $nav-text-color-focus;
+  }
+  &:focus, &:hover .icon-bar {
+    background-color: $nav-text-color-focus;
+  }
 }
 
 .icon-bar {
@@ -98,6 +93,8 @@ $nav-bg-contrast: hsl(0, 0%, 25%);
   height: 4px;
   margin: 2px;
   background-color: $nav-text-color;
+  transition-property: background-color;
+  transition-duration: $duration;
 }
 
 .icon-halfbar {
@@ -106,4 +103,6 @@ $nav-bg-contrast: hsl(0, 0%, 25%);
   height: 4px;
   margin: 2px;
   background-color: $nav-text-color;
+  transition-property: background-color;
+  transition-duration: $duration;
 }
