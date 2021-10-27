@@ -15,7 +15,7 @@ $nav-bg-color: hsl(0, 0%, 15%);
 $nav-text-color: hsl(0, 0%, 85%);
 $nav-text-color-focus: white;
 $nav-bg-contrast: hsl(0, 0%, 25%);
-$duration: 200ms;
+$duration: 100ms;
 
 #nav {
   position: fixed;
@@ -44,6 +44,7 @@ $duration: 200ms;
   display: flex;
   font-weight: 400;
   align-items: center;
+  transition-duration: $duration;
   &:focus, &:hover {
     color: $nav-text-color-focus;
     text-decoration: none;
@@ -79,10 +80,10 @@ $duration: 200ms;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  &:focus, &:hover .icon-halfbar {
+  &:hover .icon-halfbar {
     background-color: $nav-text-color-focus;
   }
-  &:focus, &:hover .icon-bar {
+  &:hover .icon-bar {
     background-color: $nav-text-color-focus;
   }
 }
@@ -105,4 +106,29 @@ $duration: 200ms;
   background-color: $nav-text-color;
   transition-property: background-color;
   transition-duration: $duration;
+}
+
+#nav-toggle[aria-expanded='true'] {
+  align-items: center;
+}
+
+#nav-toggle[aria-expanded='true'] .icon-bar {
+  &:nth-child(2), &:last-child {
+    position: absolute;
+    margin: 0;
+    width: 32px;
+  }
+}
+
+#nav-toggle[aria-expanded='true'] .icon-halfbar {
+  width: 32px;
+  transform: rotate(45deg);
+}
+
+#nav-toggle[aria-expanded='true'] .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+#nav-toggle[aria-expanded='true'] .icon-bar:last-child {
+  transform: rotate(-45deg);
 }
