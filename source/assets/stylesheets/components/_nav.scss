@@ -134,7 +134,7 @@ $nav-height: 64px;
   transform: rotate(-45deg);
 }
 
-#navbar-menu {
+#nav-menu {
   position: fixed;
   top: $nav-height;
   bottom: 0;
@@ -144,7 +144,7 @@ $nav-height: 64px;
   right: 0;
 }
 
-#navbar-toggle[aria-expanded='true'] + #navbar-menu {
+#nav-toggle[aria-expanded='true'] + #nav-menu {
   background-color: rgba(0, 0, 0, 0.4);
   opacity: 1;
   visibility: visible;
