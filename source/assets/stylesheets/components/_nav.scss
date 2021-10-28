@@ -16,10 +16,11 @@ $nav-text-color: hsl(0, 0%, 85%);
 $nav-text-color-focus: white;
 $nav-bg-contrast: hsl(0, 0%, 25%);
 $duration: 100ms;
+$nav-height: 64px;
 
 #nav {
   position: fixed;
-  height: 64px;
+  height: $nav-height;
   background-color: $nav-bg-color;
   left: 0;
   right: 0;
@@ -131,4 +132,24 @@ $duration: 100ms;
 
 #nav-toggle[aria-expanded='true'] .icon-bar:last-child {
   transform: rotate(-45deg);
+}
+
+#navbar-menu {
+  position: fixed;
+  top: $nav-height;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+}
+
+#navbar-toggle[aria-expanded='true'] + #navbar-menu {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  visibility: visible;
+}
+
+.orange {
+  background-color: orange;
 }
