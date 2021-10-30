@@ -225,7 +225,7 @@ DEPENDENCIES
   middleman
   middleman-autoprefixer
   middleman-gh-pages
-  middleman-livereload
+  middleman-livereload (~> 3.4.3)
   middleman-metaman
   rake
   rspec
