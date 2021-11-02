@@ -81,6 +81,7 @@ $nav-height: 64px;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
+  margin-right: 12px;
   &:hover .icon-halfbar {
     background-color: $nav-text-color-focus;
   }
