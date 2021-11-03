@@ -25,6 +25,7 @@ $nav-height: 64px;
   left: 0;
   right: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 1;
 }
 
 .nav-container {
@@ -158,7 +159,7 @@ $nav-height: 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 1.4rem;
   left: 0;
   right: 0;
