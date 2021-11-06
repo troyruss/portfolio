@@ -98,7 +98,7 @@ $nav-height: 64px;
   margin: 2px;
   border-radius: 2px;
   background-color: $nav-text-color;
-  transition-property: background-color;
+  transition-property: background-color transform;
   transition-duration: $duration;
 }
 
@@ -111,7 +111,7 @@ $nav-height: 64px;
   background-color: $nav-text-color;
   transition-property: background-color transform;
   transition-duration: $duration;
-  transition-timing-function: ease-in-out;
+  // transition-timing-function: ease-in-out;
 }
 
 #nav-toggle[aria-expanded='true'] {
