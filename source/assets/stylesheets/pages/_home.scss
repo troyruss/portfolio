@@ -13,12 +13,14 @@
     }
   
   h1 {
-    font-size: 100px;
-    color: #2c313f;
-    font-family: "Poppins", "Helvetica", "sans-serif";
-    text-decoration: #6FD08C wavy underline;
+    font-size:  calc(1.2em + 3vw);
   }
   
   .hero {
     margin-top: 80px;
+    font-size: clamp(3em, calc(3em + 4vw), 7em);
+    line-height: 1.2em;
+    color: #2c313f;
+    font-family: "Poppins", "Helvetica", "sans-serif";
+    text-decoration: #6FD08C wavy underline;
   }
