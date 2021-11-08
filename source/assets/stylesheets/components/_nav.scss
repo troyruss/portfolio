@@ -57,12 +57,16 @@ $nav-height: 64px;
   justify-content: center;
   width: 100%;
   padding: 0.4em 0.8em;
-  border-radius: 5px;
+  border-radius: 4px;
   &:focus, &:hover {
     color: $nav-text-color-focus;
-    background-color: $nav-bg-contrast;
+    background-color: $nav-bg-contrast; 
   }
 }
+
+.nav-link:nth-of-type(4) {
+    background-color: red;
+  }
 
 .nav-logo {
   background-color: $nav-text-color-focus;
@@ -171,6 +175,12 @@ $nav-height: 64px;
 
 #nav-toggle[aria-expanded='true'] + #nav-menu .nav-links {
   padding: 1em;
+}
+
+.togg {
+  &:focus, &:hover {
+    background-color: $nav-bg-color;
+  }
 }
 
 @media screen and (min-width: 700px) {

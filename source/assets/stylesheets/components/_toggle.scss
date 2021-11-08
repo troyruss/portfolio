@@ -1,11 +1,14 @@
 .switcher {
     // display: inline-block;
     position: relative;
-    height: 50px; //NOGOOD!
+    height: 28px; //NOGOOD!
     background: $nav-bg-contrast;
-    width: 70px; //NOGOOD!
+    width: 56px; //NOGOOD!
     border-radius: 500px;
-    margin: 0.7em 0 1em 0;
+    // margin: 0.7em 0 1em 0;
+    &:hover {
+        background-color: none;
+    }
   }
   
   .switcher__input {
@@ -23,14 +26,15 @@
     // z-index: 10;
     transition: color 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
     // will-change: transform;
-    top: 50%;
+    top: 52%;
+    left: 6%;
     transform: translateY(-50%);
   }
   
   .switcher__toggle {
     position: absolute;
     float: left;
-    height: 92%;
+    height: 86%;
     width: 50%;
     cursor: pointer;
     background-color: $nav-bg-color;
@@ -48,6 +52,6 @@
   }
   
   .switcher__input--details:checked ~ .switcher__toggle {
-    left: 20px; //NOGOOD!
+    left: 26px; //NOGOOD!
   }
   
