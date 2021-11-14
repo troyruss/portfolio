@@ -94,24 +94,24 @@
 //     // box-shadow: 0 0 1px #2196F3;
 //   }
 
-.light {
-    float: left;
-    width: 55%;
+@mixin theme-icon {
+    position: inherit;
     text-align: center;
     cursor: pointer;
-    position: inherit;
-    margin-top: 5%;
     user-select: none;
+    margin-top: 5%;
 }
 
-.dark {
+#light-icon {
+    @include theme-icon;
+    float: left;
+    width: 55%;
+}
+
+#dark-icon {
+    @include theme-icon;
     float: right;
     width: 40%;
-    text-align: center;
-    cursor: pointer;
-    position: inherit;
-    margin-top: 5%;
-    user-select: none;
 }
 
 input:checked + .slider:before {
