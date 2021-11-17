@@ -21,7 +21,7 @@ const navLinksContainer = navMenu.querySelector('.nav-links');
 navLinksContainer.addEventListener('click', (e) => e.stopPropagation());
 navMenu.addEventListener('click', toggleNavVisibility);
 
-// dark mode toggle
+// dark mode toggle need to update
 const details = document.getElementById('details');
 const basics = document.getElementById('basics');
 const basicInfo = document.querySelector('.basic-info-group');
