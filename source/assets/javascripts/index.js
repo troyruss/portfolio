@@ -51,4 +51,10 @@ if (basics) {
     //   console.log("info!");
     // });
 
-  
+// NEW DARK MODE
+let darkMode = localStorage.getItem('darkMode');
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+darkModeToggle.addEventListener('click', () => {
+    console.log('woo!');
+});
