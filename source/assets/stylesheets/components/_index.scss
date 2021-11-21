@@ -3,3 +3,10 @@
 @import "avatar";
 @import "nav";
 @import "toggle";
+
+// Dark mode colors
+.darkmode {
+    $text-color: hsl(0, 0%, 85%);
+    $background-color: #2c313f;
+  }
+  
