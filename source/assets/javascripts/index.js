@@ -67,6 +67,7 @@ const disableDarkMode = () => {
 
 if (darkMode === 'enabled') {
     enableDarkMode();
+    document.getElementById('dark-mode-toggle').checked = true;
 }
 
 darkModeToggle.addEventListener('click', () => {
