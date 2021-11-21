@@ -52,26 +52,50 @@ navMenu.addEventListener('click', toggleNavVisibility);
 //     // });
 
 // NEW DARK MODE
-const darkMode = localStorage.getItem('darkMode');
-const darkModeToggle = document.getElementById('dark-mode-toggle');
+// const darkMode = localStorage.getItem('darkMode');
+// const darkModeToggle = document.getElementById('dark-mode-toggle');
 
-const enableDarkMode = () => {
-    document.body.classList.add('darkmode');
-    localStorage.setItem('darkMode', 'enabled');
-};
+// const enableDarkMode = () => {
+//     document.body.classList.add('darkmode');
+//     localStorage.setItem('darkMode', 'enabled');
+// };
 
-const disableDarkMode = () => {
-    document.body.classList.remove('darkmode');
-    localStorage.setItem('darkMode', 'disabled');
-};
+// const disableDarkMode = () => {
+//     document.body.classList.remove('darkmode');
+//     localStorage.setItem('darkMode', 'disabled');
+// };
 
-darkModeToggle.addEventListener('click', () => {
-    console.log("ok");
-    if (darkMode === null || 'disabled') {
-        enableDarkMode();
-        console.log("enabledarkmode?");
-    } else if (darkMode === 'enabled') {
-        disableDarkMode();
-        console.log("disabledarkmode?")
-    }
+// darkModeToggle.addEventListener('click', () => {
+//     console.log("ok");
+//     if (darkMode === null || 'disabled') {
+//         enableDarkMode();
+//         console.log("enabledarkmode?");
+//     } else if (darkMode === 'enabled') {
+//         disableDarkMode();
+//         console.log("disabledarkmode?")
+//     }
+// });
+
+//  New New Darkmode
+
+const changeThemeToDark = () => {
+    document.body.setAttribute("class", "darkmode")//set theme to dark
+    localStorage.setItem("theme", "dark")
+}
+
+const changeThemeToLight = () => {
+    document.body.removeAttribute("class", "darkmode"); //set theme to light
+    localStorage.setItem("theme", "light")
+}
+
+// Get the element based on ID
+const checkbox = document.getElementById("dark-mode-toggle");
+// Apply retrived them to the website
+checkbox.addEventListener('change', () => {
+    let theme = localStorage.getItem('theme'); // Retrieve saved them from local storage
+    if (theme ==='dark'){
+        changeThemeToLight()
+    }else{
+        changeThemeToDark()
+    }   
 });
