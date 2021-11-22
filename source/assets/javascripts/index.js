@@ -77,7 +77,7 @@ darkModeToggle.addEventListener('click', () => {
         console.log("enabledarkmode?");
     } else {
         disableDarkMode();
-        console.log("disabledarkmode?")
+        console.log("disabledarkmode?");
     }
 });
 
