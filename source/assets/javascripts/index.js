@@ -80,3 +80,28 @@ darkModeToggle.addEventListener('click', () => {
         console.log("disabledarkmode?");
     }
 });
+
+//  New New Darkmode
+// const changeThemeToDark = () => {
+//     document.body.classList.add("darkmode")//set theme to dark
+//     localStorage.setItem("theme", "dark")
+// }
+
+// const changeThemeToLight = () => {
+//     document.body.classList.remove("darkmode"); //set theme to light
+//     localStorage.setItem("theme", "light")
+// }
+
+// if (changeThemeToDark === '')
+
+// // Get the element based on ID
+// const checkbox = document.getElementById("dark-mode-toggle");
+// // Apply retrived them to the website
+// checkbox.addEventListener('click', () => {
+//     let theme = localStorage.getItem('theme'); // Retrieve saved theme from local storage
+//     if (theme ==='dark'){
+//         changeThemeToLight()
+//     }else{
+//         changeThemeToDark()
+//     }   
+// });
