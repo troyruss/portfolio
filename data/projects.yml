@@ -1,3 +1,21 @@
-projects:
-  - Midorin
-  - CGL
+- name: Midorin
+  description: A mobile plant care and identification app.
+  image: midorin.png
+  url: https://www.midorin.one/
+  github: https://github.com/HundiBar/central-gaijin-library
+  tags:
+    - Ruby on Rails
+    - JavaScript
+    - Sass
+    - PostgreSQL
+
+- name: CGL
+  description: An English-language book sharing app for people in Japan.
+  image: cgl.png
+  url: http://cgl-hundibar.herokuapp.com/
+  github: https://github.com/HundiBar/Midorin
+  tags:
+    - Ruby on Rails
+    - JavaScript
+    - Sass
+    - PostgreSQL
