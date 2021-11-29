@@ -6,7 +6,7 @@
   tags:
     - Ruby on Rails
     - JavaScript
-    - Sass
+    - SCSS
     - PostgreSQL
 
 - name: CGL
@@ -17,5 +17,6 @@
   tags:
     - Ruby on Rails
     - JavaScript
-    - Sass
+    - HTML
+    - SCSS
     - PostgreSQL
