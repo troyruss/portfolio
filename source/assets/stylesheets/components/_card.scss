@@ -1,0 +1,14 @@
+.card {
+    color: $card-text-color;
+    background: $card-bg-color;
+    padding: 4rem 0 0;
+    max-width: 35ch;
+}
+
+.card-main {
+    padding: 1.5em;
+    background: linear-gradient(hsla(0, 0%, 0%, 0),
+    hsla(20, 0%, 0%, 0.3) 20%,
+    hsla(0, 0%, 0%, 1)
+    );
+}
