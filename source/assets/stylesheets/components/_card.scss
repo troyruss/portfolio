@@ -63,6 +63,16 @@
     font-weight: 400;
 }
 
+.link-group {
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    // align-items: end;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+}
+
 .button {
     background: #5AD7A2;
     padding: 12px 20px;
