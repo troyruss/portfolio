@@ -34,18 +34,25 @@
     height: 426px;
     width: 324px;
     border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-image {
-    background: url("images/imagetest.png");
+    background: image-url("imagetest.png");
+    height: 50%;
+    background-size: cover;
+    border-radius: 12px 12px 0 0;
 }
 
 .card-content {
     padding: 1.2em;
+    margin-top: -31px;
 }
 
 .card-tags {
     flex-wrap: wrap;
+    margin-bottom: 8px;
 }
 
 .card-tag {
