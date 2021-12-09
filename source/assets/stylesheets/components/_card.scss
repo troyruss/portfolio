@@ -30,7 +30,7 @@
 
 .card {
     color: $card-text-color;
-    background: #2E3134;
+    background: $card-bg-color;
     height: 426px;
     width: 324px;
     margin-bottom: 2em;
@@ -57,7 +57,7 @@
 }
 
 .card-tag {
-    background: #5A6ED7;
+    background: $card-tag-color;
     height: 426px;
     width: 324px;
     border-radius: 100px;
@@ -87,7 +87,7 @@
 }
 
 .button {
-    background: #5AD7A2;
+    background: $accent-color;
     padding: 12px 20px;
     border-radius: 6px;
     color: white;

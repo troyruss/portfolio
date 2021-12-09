@@ -1,0 +1,15 @@
+.section-title {
+    position: relative;
+    width: max-content;
+    margin: 2em;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        left: calc(1.5rem * -1);
+        bottom: 0;
+        width: calc(100% + 1.5rem);
+        background: $accent-color;
+        z-index: -1;
+    }
+}
