@@ -9,20 +9,22 @@
   body {
     background-color: $background-color;
     color: $text-color;
+    font-family: "Poppins", "Helvetica", "sans-serif";
     height: 100vh;
     line-height: 1.6;
     }
   
   h1 {
     font-size:  calc(1.2em + 3vw);
+    font-weight: 900;
+    // font-size: clamp(3em, calc(3em + 4vw), 7em);
+    font-size: clamp(2em, calc(3em + 2vw), 5em);
   }
   
   .hero {
-    margin-top: 80px;
-    font-size: clamp(3em, calc(3em + 4vw), 7em);
+    margin-top: 120px;
     line-height: 1.2em;
-    font-family: "Poppins", "Helvetica", "sans-serif";
-    text-decoration: #6FD08C wavy underline;
+    // text-decoration: #6FD08C wavy underline;
   }
 
   // Dark mode colors
