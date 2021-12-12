@@ -1,6 +1,6 @@
 - name: Midorin🌱
   description: A mobile plant care and identification app.
-  image: midorin.png
+  image: imagetest.png
   url: https://www.midorin.one/
   github: https://github.com/HundiBar/Midorin
   tags:
@@ -19,3 +19,13 @@
     - JavaScript
     - SCSS
     - PostgreSQL
+
+# - name: DurinWP📝
+#   description: A modern browser-based word profiler for graded readers.
+#   image: none
+#   url: https://github.com/troyruss/
+#   github: https://github.com/troyruss/
+#   tags:
+#     - Vue
+#     - JavaScript
+#     - SCSS

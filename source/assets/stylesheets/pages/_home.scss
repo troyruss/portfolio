@@ -27,6 +27,10 @@
     // text-decoration: #6FD08C wavy underline;
   }
 
+  .hero-image {
+    background: image-url("hero-blog.png");
+  }
+
   // Dark mode colors
   .darkmode {
     color: $text-color-dark;
