@@ -114,22 +114,59 @@
     position: relative;
     &:hover {
         opacity: 100%;
-        &:before, &:after {
-            position: absolute;
-            top: -.25rem;
-            left: 50%;
-            transform: translateX(-50%) translateY(-100%);
-        }
-        &:before {
-            content: attr(data-tooltip);
-            color: white;
-            padding: .5rem 1.5rem;
-            background: $nav-bg-color;
-            border-radius: 6px;
-        }
     }
+    // &:before, &:after {
+    //     position: absolute;
+    //     top: -.25rem;
+    //     left: 50%;
+    //     transform: translateX(-50%) translateY(-100%);
+    //     transition: 150ms transform;
+    //     transform-origin: bottom center;
+    // }
+    // &:before {
+    //     content: attr(data-tooltip);
+    //     color: white;
+    //     font-size: small;
+    //     text-align: center;
+    //     padding: .5rem 1rem;
+    //     width: max-content;
+    //     max-width: 250%;
+    //     background: $nav-bg-color;
+    //     border-radius: 6px;
+    // }
 }
 
-.tooltip {
+.icons8-github::before,
+.icons8-github::after {
+    --scale: 0;
 
+    position: absolute;
+    top: -.25rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transition: calc(#{$duration} * 2) transform;
+    transform-origin: bottom center;
+}
+
+.icons8-github::before {
+    content: attr(data-tooltip);
+        color: white;
+        font-size: small;
+        text-align: center;
+        padding: .5rem 1rem;
+        width: max-content;
+        max-width: 250%;
+        background: $nav-bg-color;
+        border-radius: 6px;
+}
+
+.icons8-github:hover::before,
+.icons8-github:hover::after {
+    --scale: 1;
+}
+
+.icons8-github::after {
+    content: "";
+    border: 10px solid transparent;
+    border-top-color: $nav-bg-color;
 }
