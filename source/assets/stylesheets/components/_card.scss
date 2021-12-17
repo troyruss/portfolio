@@ -150,14 +150,15 @@
 
 .icons8-github::before {
     content: attr(data-tooltip);
-        color: white;
-        font-size: small;
-        text-align: center;
-        padding: .5rem 1rem;
-        width: max-content;
-        max-width: 250%;
-        background: $nav-bg-color;
-        border-radius: 6px;
+    transform: translateX(-50%) translateY(calc(-100% - 10px)) scale(var(--scale));
+    color: white;
+    font-size: small;
+    text-align: center;
+    padding: .5rem 1rem;
+    width: max-content;
+    max-width: 250%;
+    background: $nav-bg-color;
+    border-radius: 6px;
 }
 
 .icons8-github:hover::before,
