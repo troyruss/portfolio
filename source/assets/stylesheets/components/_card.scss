@@ -139,18 +139,20 @@
 .icons8-github::before,
 .icons8-github::after {
     --scale: 0;
+    --arrow-size: 8px;
 
     position: absolute;
     top: -.25rem;
     left: 50%;
-    transform: translateX(-50%) translateY(-100%) scale(var(--scale));
+    transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
     transition: calc(#{$duration} * 2) transform;
     transform-origin: bottom center;
 }
 
 .icons8-github::before {
+    --translate-y: calc(-100% - var(--arrow-size));
+    
     content: attr(data-tooltip);
-    transform: translateX(-50%) translateY(calc(-100% - 10px)) scale(var(--scale));
     color: white;
     font-size: small;
     text-align: center;
@@ -164,10 +166,13 @@
 .icons8-github:hover::before,
 .icons8-github:hover::after {
     --scale: 1;
+    transition-timing-function: cubic-bezier(0.04, 1.08, 0.6, 1.21);
 }
 
 .icons8-github::after {
+    --translate-y: calc(-1 * var(--arrow-size));
     content: "";
-    border: 10px solid transparent;
+    border: var(--arrow-size) solid transparent;
     border-top-color: $nav-bg-color;
+    transform-origin: top center;
 }
