@@ -24,10 +24,12 @@
   .hero {
     margin-top: 120px;
     line-height: 1.2em;
+    display: flex;
+    flex-wrap: nowrap;
     // text-decoration: #6FD08C wavy underline;
   }
 
-  .hero-image {
+  #hero-image {
     background: image-url("hero-blog.png");
   }
 
