@@ -20,6 +20,10 @@
     // font-size: clamp(3em, calc(3em + 4vw), 7em);
     font-size: clamp(2em, calc(3em + 2vw), 5em);
   }
+
+  h2 {
+    font-size: calc(.8em + 1.5vw)
+  }
   
   .hero {
     margin-top: 120px;
