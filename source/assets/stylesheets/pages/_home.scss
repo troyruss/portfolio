@@ -34,7 +34,11 @@
   }
 
   #hero-image {
-    background: image-url("hero-blog.png");
+    background: image-url("#");
+  }
+
+  #hero-blob {
+    background: image-url("hero-blob.svg");
   }
 
   // Dark mode colors
