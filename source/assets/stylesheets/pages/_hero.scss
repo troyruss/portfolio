@@ -7,19 +7,10 @@
   }
 
   // FIX THIS FIRST
-  .hero-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
-  }
-
   #hero-image {
-    background: url("face-test.svg");
-    min-height: 100%;
+    background: image-url("face-test.svg");
   }
 
   #hero-blob {
-    background: url("hero-blob.svg");
-    min-height: 100%;
+    background: image-url("hero-blob.svg");
   }
