@@ -7,10 +7,17 @@
   }
 
   // FIX THIS FIRST
+  .hero-images {
+      width: 200px;
+  }
   #hero-image {
     background: image-url("face-test.svg");
   }
 
   #hero-blob {
     background: image-url("hero-blob.svg");
+  }
+
+  .text {
+      margin-top: 0;
   }
