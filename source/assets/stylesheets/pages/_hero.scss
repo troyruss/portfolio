@@ -9,21 +9,26 @@
   // FIX THIS FIRST
   .hero-images {
       width: 200px;
+      display: grid;
+      border: solid red;
   }
   #hero-image {
     background: image-url("face-test.svg");
-    width: 300px;
-    height: 300px;
-    border: solid red;
+    // width: 300px;
+    // height: 300px;
+    min-height: 20%;
+    grid-area: overlap;
+    z-index: 10;
   }
 
   #hero-blob {
     background: image-url("hero-blob.svg");
     background-size: auto;
     background-position: left;
-    min-height: 100%;
+    min-height: 20%;
     background-repeat: no-repeat;
-    margin-left: -234px;
+    // margin-left: -234px;
+    grid-area: overlap;
   }
 
   .text {
