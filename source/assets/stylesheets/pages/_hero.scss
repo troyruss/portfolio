@@ -17,8 +17,13 @@
     // width: 300px;
     // height: 300px;
     // min-height: 20%;
-    grid-area: overlap;
+    // grid-area: overlap;
     z-index: 10;
+    padding: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -19px;
+    background-size: 72%;
   }
 
   #hero-blob {
@@ -28,7 +33,9 @@
     min-height: 20%;
     background-repeat: no-repeat;
     // margin-left: -234px;
-    grid-area: overlap;
+    // grid-area: overlap;
+    padding: 149px;
+    margin-left: -28%;
   }
 
   .text {
