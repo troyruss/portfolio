@@ -18,24 +18,26 @@
     // height: 300px;
     // min-height: 20%;
     // grid-area: overlap;
-    z-index: 10;
+    // z-index: 10;
     padding: 15%;
     background-repeat: no-repeat;
     background-position: center;
-    margin-top: -19px;
+    margin-top: -5%;
     background-size: 72%;
   }
 
   #hero-blob {
     background: image-url("hero-blob-cropped.svg");
     background-size: auto;
-    background-position: left;
+    background-position: center;
     min-height: 20%;
     background-repeat: no-repeat;
     // margin-left: -234px;
     // grid-area: overlap;
-    padding: 149px;
+    padding: 13%;
     margin-left: -28%;
+    margin-top: -4%;
+    z-index: -1;
   }
 
   .text {
