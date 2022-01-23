@@ -16,13 +16,13 @@
     background: image-url("face-test.svg");
     // width: 300px;
     // height: 300px;
-    min-height: 20%;
+    // min-height: 20%;
     grid-area: overlap;
     z-index: 10;
   }
 
   #hero-blob {
-    background: image-url("hero-blob.svg");
+    background: image-url("hero-blob-cropped.svg");
     background-size: auto;
     background-position: left;
     min-height: 20%;
