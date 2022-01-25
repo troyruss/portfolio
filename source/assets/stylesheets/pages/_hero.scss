@@ -38,6 +38,7 @@
     margin-left: -28%;
     margin-top: -4%;
     z-index: -1;
+    // filter: invert(50%);
   }
 
   .text {
@@ -45,11 +46,30 @@
   }
 
   @media screen and (max-width: 768px) {
+    .hero {
+      display: flex;
+      flex-direction: column;
+    }
+
     #hero-image {
-      display: none;
+      order: 1;
+      padding: 15%;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: -5%;
+      background-size: 22%;
     }
 
     #hero-blob {
-      display: none;
+      order: 2;
+      padding: 13%;
+      margin-left: 0%;
+      margin-top: -27%;
+      z-index: -1;
+    }
+
+    .text {
+      order: 3;
+      text-align: center;
     }
   }
