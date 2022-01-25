@@ -7,11 +7,11 @@
   }
 
   // FIX THIS FIRST
-  .hero-images {
-      width: 200px;
-      display: grid;
-      border: solid red;
-  }
+  // .hero-images {
+  //     width: 200px;
+  //     display: grid;
+  //     border: solid red;
+  // }
   #hero-image {
     background: image-url("face-test.svg");
     // width: 300px;
@@ -42,4 +42,14 @@
 
   .text {
       margin-top: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    #hero-image {
+      display: none;
+    }
+
+    #hero-blob {
+      display: none;
+    }
   }
