@@ -66,6 +66,8 @@ $nav-height: 64px;
 
 .nav-logo {
   background-color: $nav-text-color-focus;
+  background: image-url("favicon.png");
+  background-size: cover;
   border-radius: 50%;
   width: 30px;
   height: 30px;
