@@ -6,7 +6,7 @@ input[type=email], input[type=text], select, textarea {
     appearance: none;
     width: 100%;
     position: relative;
-    border-radius: 3px;
+    border-radius: 2px;
     padding: 9px 12px;
     line-height: 1.4;
     color: inherit;
@@ -28,7 +28,23 @@ input[type=email], input[type=text], select, textarea {
     padding: 9px 24px;
 }
 
+.submit-button {
+    background: $card-tag-color;
+    padding: 12px 40px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    transition-duration: $duration;
+    &:hover {
+        text-decoration: none;
+        color: white;
+        background: #5fe6ae;
+    }
+}
+
 .contact-form {
-    // background: red;
-    // margin-right: 40px;
+    max-width: 20rem;
 }
