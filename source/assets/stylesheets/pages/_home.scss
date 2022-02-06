@@ -5,6 +5,10 @@
     margin: 0;
     padding: 0;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   body {
     background-color: $background-color;
@@ -15,18 +19,25 @@
     }
   
   h1 {
-    font-size:  calc(1.2em + 3vw);
+    // font-size:  calc(1.2em + 3vw);
     font-weight: 900;
     // font-size: clamp(3em, calc(3em + 4vw), 7em);
     font-size: clamp(2em, calc(3em + 2vw), 5em);
   }
 
   h2 {
-    font-size: calc(.8em + 1.5vw)
+    font-size: calc(.8em + 1.5vw) // calc(1.4em + 1.5vw) for project titles?
   }
 
   // Dark mode colors
   .darkmode {
     color: $text-color-dark;
     background-color: $background-color-dark;
+  }
+
+  // stop smooth scroll
+  @media screen and (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
