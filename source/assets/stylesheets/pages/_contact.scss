@@ -1,3 +1,21 @@
+#contact-section {
+    scroll-margin-top: 5rem;
+    margin-bottom: 20rem;
+}
+
+#contact-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#right {
+    display: inline;
+}
+
+#below {
+    display: none;
+}
+
 input[type=email], input[type=text], select, textarea { 
     // margin-left: 50px;
     box-shadow: inset #abacaf 0 0 0 2px;
@@ -54,4 +72,31 @@ input[type=email] {
 
 .contact-form {
     margin: 0 10vw;
+}
+
+
+
+
+#nada {
+    // margin-top: 120px;
+    margin-top: calc(6em + 5vw);
+    line-height: 1.2em;
+    display: flex;
+    flex-wrap: nowrap;
+    // text-decoration: #6FD08C wavy underline;
+  }
+
+@media screen and (max-width: 991px) {
+    #contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right {
+        display: none;
+    }
+    
+    #below {
+        display: inline;
+    }
 }
