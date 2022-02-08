@@ -25,6 +25,11 @@ input[type=email], input[type=text], select, textarea {
     }
 }
 
+input[type=email] {
+    min-width: 28em;
+    max-width: 33em;
+}
+
 #message {
     height: 6em;
     margin-bottom: 0.5em;
@@ -48,5 +53,5 @@ input[type=email], input[type=text], select, textarea {
 }
 
 .contact-form {
-    padding: 0 10vw;
+    margin: 0 10vw;
 }
