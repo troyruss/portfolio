@@ -42,6 +42,7 @@ input[type=email], input[type=text], select, textarea {
     background: inherit;
     appearance: none;
     width: 100%;
+    min-width: 28em;
     position: relative;
     border-radius: 4px;
     padding: 9px 12px;
@@ -62,10 +63,10 @@ input[type=email], input[type=text], select, textarea {
     }
 }
 
-input[type=email] {
-    min-width: 28em;
-    max-width: 33em;
-}
+// input[type=email] {
+//     min-width: 28em;
+//     // max-width: 33em;
+// }
 
 #message {
     height: 6em;
@@ -112,7 +113,7 @@ input[type=email] {
     }
 
     #contact-text {
-        margin: 0 10vw 1rem;
+        margin: 0 6vw 1rem;
     }
 
     #right {
@@ -122,4 +123,12 @@ input[type=email] {
     #below {
         display: inline;
     }
+
+    .contact-form {
+        margin: 0 6vw;
+    }
+
+    // input[type=email] {
+    //     min-width: 20em;
+    // }
 }
