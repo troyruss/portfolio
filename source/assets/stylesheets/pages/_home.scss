@@ -38,12 +38,6 @@
     font-size: calc(.8em + 1.5vw) // calc(1.4em + 1.5vw) for project titles?
   }
 
-  .fa-github-alt {
-    color: inherit;
-    text-decoration: none;
-    font-style: normal;
-}
-
   // Dark mode colors
   .darkmode {
     color: $text-color-dark;
