@@ -116,7 +116,7 @@ input[type=email], input[type=text], select, textarea {
     &:hover {
         text-decoration: none;
         color: white;
-        background: #5fe6ae;
+        background: $submit-hover;
     }
 }
 

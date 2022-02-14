@@ -62,6 +62,7 @@
     padding: 12px 20px;
     border-radius: 6px;
     color: white;
+    text-shadow: 1px 1px #115f4b42;
     font-weight: 600;
     font-size: 12px;
     text-decoration: none;
@@ -69,7 +70,7 @@
     &:hover {
         text-decoration: none;
         color: white;
-        background: #5fe6ae;
+        background: $accent-color-hover;
     }
 }
 
