@@ -27,7 +27,7 @@
 }
 
 .card-tag {
-    background: $card-tag-color;
+    background: $button-color;
     height: 426px;
     width: 324px;
     border-radius: 100px;
@@ -58,11 +58,11 @@
 }
 
 .button {
-    background: $accent-color;
+    background: $button-color;
     padding: 12px 20px;
     border-radius: 6px;
     color: white;
-    text-shadow: 1px 1px #115f4b42;
+    // text-shadow: 1px 1px #115f4b42;
     font-weight: 600;
     font-size: 12px;
     text-decoration: none;
@@ -70,7 +70,7 @@
     &:hover {
         text-decoration: none;
         color: white;
-        background: $accent-color-hover;
+        background: $button-hover-color;
     }
 }
 

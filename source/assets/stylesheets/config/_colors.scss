@@ -14,6 +14,8 @@ $text-color: #2c313f;
 $background-color: rgb(247, 247, 244);
 $accent-color: #1de9b6; // orig -- #5AD7A2 or... maybe go with? #19d9a9
 $accent-color-hover: #20ffc7; // orig -- #5fe6ae
+$button-color: #5A6ED7; //or #5D59FF?
+$button-hover-color: #6a83fc;
 
 // Navbar colors
 $nav-bg-color: hsl(0, 0%, 15%);
@@ -24,10 +26,7 @@ $nav-bg-contrast: hsl(0, 0%, 25%);
 // Card colors
 $card-text-color: hsl(0, 0%, 85%);
 $card-bg-color: #2E3134;
-$card-tag-color: #5A6ED7; //or #5D59FF?
-
-// Contact form colors
-$submit-hover: #6a83fc;
+// $card-tag-color: #5A6ED7; //or #5D59FF?
 
 // Darkmode colors
 $text-color-dark: rgb(247, 247, 244);

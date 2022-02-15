@@ -104,7 +104,7 @@ input[type=email], input[type=text], select, textarea {
 }
 
 .submit-button {
-    background: $card-tag-color;
+    background: $button-color;
     padding: 12px 40px;
     border-radius: 6px;
     border: none;
@@ -116,7 +116,7 @@ input[type=email], input[type=text], select, textarea {
     &:hover {
         text-decoration: none;
         color: white;
-        background: $submit-hover;
+        background: $button-hover-color;
     }
 }
 
