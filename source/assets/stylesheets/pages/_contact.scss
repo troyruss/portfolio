@@ -48,16 +48,23 @@
     text-decoration: none;
     transition-duration: $duration;
     &:hover {
-        opacity: 85%;
+        // opacity: 85%;
+        // text-shadow:1px 1px 2px $text-color;;
+        &::before {
+            transform: scaleY(2);
+        }
     }
     &::before {
         content: "";
         position: absolute;
         height: 0.2em;
-        bottom: 3px;
+        bottom: .2em;
         width: 100%;
         background: $accent-color;
         z-index: -1;
+        transition: ease-out ($duration * 2);
+        // transition-duration: ($duration);
+        transform-origin: bottom;
     }
 }
 
