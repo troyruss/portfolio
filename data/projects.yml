@@ -1,6 +1,6 @@
 - name: Midorin🌱
   description: A mobile plant care and identification app.
-  image: imagetest.png
+  image: midorin3.png
   url: https://www.midorin.one/
   github: https://github.com/HundiBar/Midorin
   tags:
@@ -11,7 +11,7 @@
 
 - name: CGL📚
   description: An English-language book sharing app for people in Japan.
-  image: cgl1.png
+  image: cgl2.png
   url: http://cgl-hundibar.herokuapp.com/
   github: https://github.com/HundiBar/central-gaijin-library
   tags:
