@@ -28,6 +28,7 @@
 
 .card-tag {
     background: $button-color;
+    color: $card-text-color;
     height: 426px;
     width: 324px;
     border-radius: 100px;
@@ -122,7 +123,7 @@
 }
 
 .icons8-github::after {
-    --translate-y: calc(-1 * var(--arrow-size));
+    --translate-y: calc(-1.1 * var(--arrow-size));
     content: "";
     border: var(--arrow-size) solid transparent;
     border-top-color: $nav-bg-color;
