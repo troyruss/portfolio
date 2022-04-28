@@ -49,6 +49,13 @@
   .darkmode {
     color: $text-color-dark;
     background-color: $background-color-dark;
+    .card {
+      color: $card-text-color;
+      background: $card-bg-color;
+      .icons8-github {
+        filter: none;
+      }
+    }
   }
 
   // stop smooth scroll
