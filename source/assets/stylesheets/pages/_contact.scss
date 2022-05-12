@@ -8,10 +8,6 @@
     flex-wrap: nowrap;
 }
 
-// #contact-text-links {
-//     margin: 0 6vw 1rem
-// }
-
 #contact-text {
     margin-top: -0.4em;
 }
@@ -100,11 +96,6 @@ input[type=email], input[type=text], select, textarea {
     }
 }
 
-// input[type=email] {
-//     min-width: 28em;
-//     // max-width: 33em;
-// }
-
 #message {
     height: 6em;
     margin-bottom: 0.5em;
@@ -128,12 +119,10 @@ input[type=email], input[type=text], select, textarea {
 }
 
 #nada {
-    // margin-top: 120px;
     margin-top: calc(6em + 5vw);
     line-height: 1.2em;
     display: flex;
     flex-wrap: nowrap;
-    // text-decoration: #6FD08C wavy underline;
   }
 
 @media screen and (max-width: 991px) {
