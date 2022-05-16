@@ -1,5 +1,4 @@
 .hero {
-  // margin-top: 120px;
   margin-top: calc(6em + 5vw);
   line-height: 1.2em;
   display: flex;
@@ -9,11 +8,6 @@
 
 #hero-image {
   background: image-url("hero-image.svg");
-  // width: 300px;
-  // height: 300px;
-  // min-height: 20%;
-  // grid-area: overlap;
-  // z-index: 10;
   padding: 15%;
   background-repeat: no-repeat;
   background-position: center;
@@ -27,13 +21,10 @@
   background-position: center;
   min-height: 20%;
   background-repeat: no-repeat;
-  // margin-left: -234px;
-  // grid-area: overlap;
   padding: 13%;
   margin-left: -28%;
   margin-top: -4%;
   z-index: -1;
-  // filter: invert(50%);
 }
 
 .hero-text {
